@@ -27,7 +27,7 @@ let package = Package(
 //            name: "SoomirangSDKTests",
 //            dependencies: ["SoomirangSDK"]),
         .binaryTarget(
-            name: "SoomirangSDK",
+            name: "SDKTest",
             path: "/Users/heohagcheol/Documents/iOS/SDKTest/SDKTest.xcframework"
         ),
     ]
