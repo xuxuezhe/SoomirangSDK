@@ -18,13 +18,17 @@ let package = Package(
         // 여기에 외부 의존성이 있으면 추가합니다.
     ],
     targets: [
-        // SDK 코드가 포함된 타겟
-        .target(
+//        // SDK 코드가 포함된 타겟
+//        .target(
+//            name: "SoomirangSDK",
+//            dependencies: []),
+//        // 테스트 코드가 포함된 타겟
+//        .testTarget(
+//            name: "SoomirangSDKTests",
+//            dependencies: ["SoomirangSDK"]),
+        .binaryTarget(
             name: "SoomirangSDK",
-            dependencies: []),
-        // 테스트 코드가 포함된 타겟
-        .testTarget(
-            name: "SoomirangSDKTests",
-            dependencies: ["SoomirangSDK"]),
+            path: "/Users/heohagcheol/Documents/iOS/SDKTest/SDKTest.xcframework"
+        ),
     ]
 )
