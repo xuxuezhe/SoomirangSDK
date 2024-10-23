@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+public Tesst{
+    private init(){}
+    
+    public static func aaa(){
+        print("aaaaaaaaaa")
+    }
+}
