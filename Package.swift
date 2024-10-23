@@ -12,10 +12,11 @@ let package = Package(
         // SDK를 라이브러리로 정의
         .library(
             name: "SoomirangSDK",
-            targets: ["SoomirangSDK"]),
+            targets: ["SoomirangSDK", "SDKTest"]),
     ],
     dependencies: [
         // 여기에 외부 의존성이 있으면 추가합니다.
+//        .package(url: "https://github.com/xuxuezhe/SoomirangSDK.git", from: "1.0.0")
     ],
     targets: [
 //        // SDK 코드가 포함된 타겟
@@ -26,8 +27,13 @@ let package = Package(
 //        .testTarget(
 //            name: "SoomirangSDKTests",
 //            dependencies: ["SoomirangSDK"]),
-        .binaryTarget(
+        // 소스 코드 타겟
+        .target(
             name: "SoomirangSDK",
+            dependencies: []
+        ),
+        .binaryTarget(
+            name: "SDKTest",
             path: "./SDKTest.xcframework"
         ),
     ]
