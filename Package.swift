@@ -28,7 +28,7 @@ let package = Package(
 //            dependencies: ["SoomirangSDK"]),
         .binaryTarget(
             name: "SoomirangSDK",
-            path: "./SDKTest/SDKTest.xcframework"
+            path: "./SDKTest.xcframework"
         ),
     ]
 )
